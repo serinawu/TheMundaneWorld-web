@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: block;
+    max-width: 1784px;
+    max-height: fit-content;
+    align-items: center;
+    margin: 0 50px;
+}
+body{
+    background-color: #1f1f40;
+}
+.light-mode{
+    background-color: #fff;
+    color: #000;
+}
+#top {
+    width: auto;
+    height: 35px;
+    margin-top: 50px;
+}
+
+#top .title a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 29px ;
+   letter-spacing: 3px;
+   float: left;
+}
+#top nav ul {
+    list-style: none;
+}
+#top nav li {
+    float: right;
+}
+#top nav a{
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 29px ;
+    padding: 0 19.5px;
+}
+#top  .last-li{
+    padding-right: 0;
+}
+#top nav a:hover{
+    color: #fff;
+}
+#top nav a:active{
+    color: rgb(255, 255, 255);
+}
+#main {
+    height: 810px;
+    display: block;
+}
+#main .bg-text{
+  margin:0 auto;
+  font-family: sans-serif;
+  font-size:200px;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 40px #fff;
+  transform: scale(.5);
+  transition: .6s ease;
+  float: right;
+}
+#main .bg-text:hover{
+    text-shadow: 0 0 0 #fff;
+    transform: scale(0.5);
+  }
+  #main .bg-text span{
+      float: right;
+      margin-right: 0;
+  }
+#bottom {
+    max-height: 17px;
+}
+#bottom p{
+    text-align: center;
+    color: #fff;
+    font-size: 25px ;
+    padding-bottom: 50px;
+    position: relative;
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0);
+}
+@keyframes animate
+{
+   0%
+   {
+       background-position: -500%;
+   }
+   100%
+   {
+       background-position: 500%;
+   }
+}
+
+#changBgc.active{
+    visibility: visible;
+    opacity: 1;
+}
+button {
+    position: fixed;
+    bottom: 60px;
+    z-index: 99999;
+    background-color:rgba(255, 255, 255, 0.466);
+    text-decoration:none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    transition: all 0.4s;
+}
